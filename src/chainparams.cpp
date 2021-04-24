@@ -91,7 +91,7 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nTimeout = 1517356801; // January 31st, 2018
 
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000000000000000000001");
+        consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000000000000000000000");
 
         // By default assume that the signatures in ancestors of this block are valid.
         consensus.defaultAssumeValid = uint256S("0x6e1c197718ae65afc0baea705c1583522c462e638bd4f0a25274daeb65ab9339"); //1683528
@@ -297,7 +297,7 @@ public:
 
         UpdateVersionBitsParametersFromArgs(args);
 
-        genesis = CreateGenesisBlock(1618640402, 0, 0x1e0ffff0, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1618640402, 0, 0x207fffff, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
         assert(consensus.hashGenesisBlock == uint256S("0xcbfed61f91ba33db61e4459314285285c89c8f5e7d0dd19c35304029424b7dda"));
         assert(genesis.hashMerkleRoot == uint256S("0xddac39a7aa0ef102caf793f7349923cf284427d2df1bf8b4e1b3543ea04db4e4"));
