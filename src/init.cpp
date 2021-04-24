@@ -555,8 +555,8 @@ void SetupServerArgs()
 
 std::string LicenseInfo()
 {
-    const std::string URL_SOURCE_CODE = "<https://github.com/markerz99/Grovcoin>";
-    const std::string URL_WEBSITE = "<https://hi.in.th>";
+    const std::string URL_SOURCE_CODE = "<https://github.com/>";
+    const std::string URL_WEBSITE = "<https://www.gcointoken.com>";
 
     return CopyrightHolders(strprintf(_("Copyright (C) %i-%i"), 2011, COPYRIGHT_YEAR) + " ") + "\n" +
            "\n" +
