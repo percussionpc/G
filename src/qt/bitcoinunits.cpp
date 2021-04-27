@@ -67,7 +67,7 @@ QString BitcoinUnits::description(int unit)
     case BTC: return QString("Grovcoins");
     case mBTC: return QString("Miligrov (1 / 1" THIN_SP_UTF8 "000)");
     case uBTC: return QString("Microgrov (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
-    case SAT: return QString("PunPun (sat) (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+    case SAT: return QString("Punpun (sat) (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
     default: return QString("???");
     }
 }
